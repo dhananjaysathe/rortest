@@ -1,0 +1,1 @@
+<div><%= @book.get 'book_name' %> - <a class = "remove-book">remove <a/></div>
