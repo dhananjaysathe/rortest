@@ -13,7 +13,7 @@ class Shelfari.Views.BooksIndex extends Backbone.View
     @
     
   render: ->
-    $(@el).html.(@template)
+    
     
     footerView = new Shelfari.Views.Footer collection: @collection
     footerView.render()

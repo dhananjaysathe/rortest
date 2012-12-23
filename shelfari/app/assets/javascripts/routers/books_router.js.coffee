@@ -1,8 +1,7 @@
 class Shelfari.Routers.Books extends Backbone.Router
-  routes:
-	'' : 'index'
-		
+	routes:
+		'' : 'index'
 	index: ->
-      tasks = new Shelfari.Collections.Books
-	  new Shelfari.Views.BooksIndex collection: books
-	  books.fetch()
+		books = new Shelfari.Collections.Books
+		new Shelfari.Views.BooksIndex collection: books
+		books.fetch()

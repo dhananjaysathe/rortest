@@ -3,9 +3,9 @@ window.Shelfari =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> 
-    new Shelfari.Routers.Books
-    Backbone.history.start()
+  initialize: ->  
+	new Shelfari.Routers.Books
+	Backbone.history.start()
 
 $(document).ready ->
   Shelfari.initialize()

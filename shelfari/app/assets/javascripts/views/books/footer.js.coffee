@@ -9,4 +9,4 @@ class Shelfari.Views.BooksItem extends Backbone.View
     $(@el).html(@template({remaining: remaining}))
     @
   updateRemaining: ->
-    @$('#book-count').text.(@collection.length)
+    @$('#book-count').text(@collection.length)
